@@ -68,7 +68,7 @@ const LANG = {
     contact_linkedin:"LinkedIn",
     contact_email:   "Email",
     footer_title:    "Apprentie Analyste SOC",
-    footer_quote:    "reste curieux·se, reste vigilant·e"
+    footer_quote:    "2026"
   },
 
   en: {
@@ -135,7 +135,7 @@ const LANG = {
     contact_linkedin:"LinkedIn",
     contact_email:   "Email",
     footer_title:    "SOC Analyst Apprentice",
-    footer_quote:    "stay curious, stay vigilant"
+    footer_quote:    "2026"
   }
 };
 

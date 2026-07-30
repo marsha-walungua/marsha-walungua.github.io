@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title">Marsha Walungua — Portfolio SOC</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2306b6d4'/%3E%3Cpath d='M10 20 L16 10 L22 20Z' fill='%230a0e17'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">m<span class="accent">w</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#certs" data-i18n="nav_certs">Certs</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">FR</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="bg-grid"></div>
+      <div class="bg-glow glow-1"></div>
+      <div class="bg-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line">Marsha</span>
+        <span class="line accent">Walungua</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        De la full-stack à la défense blue team &mdash;<br />
+        chasser les menaces, analyser les logs, casser &amp; réparer.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_work">Voir mon travail</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Me contacter</a>
+      </div>
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span class="status-text" data-i18n="hero_status">Ouvert aux opportunités SOC</span>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> <span data-i18n="about_title">à propos</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about_p1">
+            Je suis <strong>Marsha Walungua</strong>, apprentie analyste SOC actuellement en formation
+            <strong>Réseaux, Infrastructure &amp; Sécurité</strong> à l'<strong>ORT Toulouse</strong>.
+          </p>
+          <p data-i18n="about_p2">
+            Je viens du développement full-stack — je sais comment les apps sont construites, donc
+            je sais aussi où elles cassent. Cette double perspective me permet de penser à la fois
+            comme un attaquant et un défenseur.
+          </p>
+          <p data-i18n="about_p3">
+            Mon quotidien : captures Wireshark, tableaux de bord SIEM et labs CTF. Je crois que la
+            meilleure défense, c'est la curiosité — plus tu creuses, plus tu trouves.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label" data-i18n="stat_years">Ans en IT</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label" data-i18n="stat_ctf">Défis CTF</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label" data-i18n="stat_langs">Langues</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <span class="term-dot red"></span>
+            <span class="term-dot yellow"></span>
+            <span class="term-dot green"></span>
+            <span class="term-title">marsha@SOC:~$</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <p class="output">marsha-walungua</p>
+            <p><span class="prompt">$</span> <span class="cmd">cat /etc/passwd | grep role</span></p>
+            <p class="output" data-i18n="term_role">SOC Analyst Apprentice @ ORT Toulouse</p>
+            <p><span class="prompt">$</span> <span class="cmd">ps aux | grep studying</span></p>
+            <p class="output" data-i18n="term_studying">CCNA &nbsp; Security+ &nbsp; Blue Team</p>
+            <p><span class="prompt">$</span> <span class="cmd">_</span><span class="cursor-blink">|</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-dark" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> <span data-i18n="skills_title">compétences &amp; outils</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>SIEM</h3>
+          <p data-i18n="skill_siem">Splunk, Elastic Stack, Wazuh</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3 data-i18n="skill_net_title">Analyse Réseau</h3>
+          <p data-i18n="skill_net">Wireshark, tcpdump, nmap, Zeek</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛡️</div>
+          <h3 data-i18n="skill_def_title">Défense</h3>
+          <p data-i18n="skill_def">Firewalls, IDS/IPS, Snort, Suricata</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Linux</h3>
+          <p data-i18n="skill_linux">NixOS, Kali, bash scripting, hardening</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3 data-i18n="skill_script_title">Scripting</h3>
+          <p data-i18n="skill_script">Python, Bash, automatisation, logs</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3 data-i18n="skill_web_title">Sécurité Web</h3>
+          <p data-i18n="skill_web">Burp Suite, OWASP Top 10, recon</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3 data-i18n="skill_fullstack_title">Développement Web</h3>
+          <p data-i18n="skill_fullstack">React, Python, PHP, JS, API REST</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>Infra</h3>
+          <p data-i18n="skill_infra">Proxmox, Docker, Tailscale, AD</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section" id="certs">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> <span data-i18n="certs_title">certifications</span></h2>
+      <div class="certs-grid">
+        <div class="cert-card studying">
+          <div class="cert-badge">🔄</div>
+          <h3>CCNA</h3>
+          <p data-i18n="cert_ccna">Cisco Certified Network Associate</p>
+          <span class="cert-status" data-i18n="cert_in_progress">En cours</span>
+        </div>
+        <div class="cert-card studying">
+          <div class="cert-badge">🔄</div>
+          <h3>CompTIA Security+</h3>
+          <p data-i18n="cert_secplus">Certification fondamentale en cybersécurité</p>
+          <span class="cert-status" data-i18n="cert_in_progress">En cours</span>
+        </div>
+        <div class="cert-card future">
+          <div class="cert-badge">🔜</div>
+          <h3>CompTIA CySA+</h3>
+          <p data-i18n="cert_cysa">Analyste en cybersécurité</p>
+          <span class="cert-status" data-i18n="cert_next">Prochain objectif</span>
+        </div>
+        <div class="cert-card future">
+          <div class="cert-badge">🔜</div>
+          <h3>Splunk Core Certified</h3>
+          <p data-i18n="cert_splunk">Utilisateur avancé Splunk</p>
+          <span class="cert-status" data-i18n="cert_next">Prochain objectif</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section section-dark" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> <span data-i18n="projects_title">projets</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🏠</span>
+            <h3 data-i18n="proj_siem_title">Homelab &amp; SIEM</h3>
+          </div>
+          <p data-i18n="proj_siem_desc">Lab personnel multi-nœuds : Proxmox (8 Go), ThinkPad NixOS (16 Go), MacBook Air M2, nœud de monitoring NixOS (4 Go). Relié en Tailscale. Apprentissage de Wazuh, Elastic et de la détection d'intrusion.</p>
+          <div class="project-tags">
+            <span>Proxmox</span><span>Wazuh</span><span>Tailscale</span>
+          </div>
+          <a href="https://app.notion.com/p/Homelab-2bdd613a6d538005b358e86a42f737ec" class="project-link" target="_blank" data-i18n="proj_siem_link">Voir le lab →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📝</span>
+            <h3 data-i18n="proj_ctf_title">Writeups CTF</h3>
+          </div>
+          <p data-i18n="proj_ctf_desc">50+ challenges Root-Me résolus et documentés — des fuites HTML au HTTP request smuggling &amp; XSS. Writeups bilingues (FR/EN).</p>
+          <div class="project-tags">
+            <span>Root-Me</span><span>Web</span>
+          </div>
+          <a href="https://www.root-me.org/Mrsh?lang=fr" class="project-link" target="_blank" data-i18n="proj_ctf_link">Voir mon profil →</a>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🔬</span>
+            <h3 data-i18n="proj_pcap_title">Analyse PCAP</h3>
+          </div>
+          <p data-i18n="proj_pcap_desc">Analyse de trafic malveillant, dissection de protocoles avec Wireshark, extraction d'IoC de PCAPs réels. Construction d'une boîte à outils Python.</p>
+          <div class="project-tags">
+            <span>Wireshark</span><span>Python</span><span>Forensics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> <span data-i18n="contact_title">contact</span></h2>
+      <p class="contact-intro" data-i18n="contact_intro">
+        Vous cherchez une apprentie analyste SOC ? Parlons-en.
+      </p>
+      <div class="contact-grid">
+        <a href="https://github.com/marsha-walungua" target="_blank" class="contact-card">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </span>
+          <span class="contact-label" data-i18n="contact_github">GitHub</span>
+          <span class="contact-value">@marsha-walungua</span>
+        </a>
+        <a href="https://www.linkedin.com/in/marsha-walungua-b53295383/" target="_blank" class="contact-card">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </span>
+          <span class="contact-label" data-i18n="contact_linkedin">LinkedIn</span>
+          <span class="contact-value">Marsha Walungua</span>
+        </a>
+        <a href="mailto:marshawalungua@gmail.com" class="contact-card">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </span>
+          <span class="contact-label" data-i18n="contact_email">Email</span>
+          <span class="contact-value">marshawalungua@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Marsha Walungua &mdash; <span data-i18n="footer_title">Apprentie Analyste SOC</span></p>
+      <p class="footer-quote"><span data-i18n="footer_quote">reste curieux·se, reste vigilant·e</span> <span class="accent">🛡️</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
